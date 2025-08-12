@@ -69,7 +69,7 @@ while game_is_on:
         scoreboard.l_point()
         if scoreboard.l_jump_scare == 1:
             rand_gif_num = random.randint(1, 17)
-            gif = fr"C:\Users\Robbert Torfs - 7JAL\OneDrive - Dubai College\100 Days of Code\Day 22\Pong\gifs\funny gif {rand_gif_num}.gif"
+            gif = fr"gifs\funny gif {rand_gif_num}.gif"
             screen.bgpic(picname=gif)
             screen.update()
             scoreboard.l_jump_scare = 0
@@ -85,7 +85,7 @@ while game_is_on:
         scoreboard.r_point()
         if scoreboard.r_jump_scare == 1:
             rand_gif_num = random.randint(1, 17)
-            gif = fr"C:\Users\Robbert Torfs - 7JAL\OneDrive - Dubai College\100 Days of Code\Day 22\Pong\gifs\funny gif {rand_gif_num}.gif"
+            gif = fr"gifs\funny gif {rand_gif_num}.gif"
             screen.bgpic(picname=gif)
             screen.update()
             scoreboard.r_jump_scare = 0
@@ -105,3 +105,4 @@ while game_is_on:
 # Save high score before exiting
 save_high_score()
 screen.bye()
+
