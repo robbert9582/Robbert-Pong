@@ -41,6 +41,11 @@ class Scoreboard(Turtle):
         self.l_jump_scare = 1
         self.update_scoreboard()
 
+        # Update high score if needed
+            if self.l_score > self.high_score:
+                self.high_score = self.l_score
+                self.save_high_score()
+
     def r_point(self):
         self.r_score += 1
         self.r_jump_scare = 1
